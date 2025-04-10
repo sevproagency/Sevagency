@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sev'Pro Agency - Nos Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nos Services</h1>
+        <div class="row">
+            <!-- Graphisme -->
+            <div class="col-md-4" id="graphisme">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-paint-brush service-icon"></i>
+                        <h4 class="card-title">Graphisme</h4>
+                        <p class="card-text">Création de visuels modernes et attractifs</p>
+                        <button class="btn btn-outline-primary see-more-btn" data-target="graphisme-details">Voir plus</button>
+                        <div id="graphisme-details" class="service-details">
+                            <h5>Nos créations graphiques :</h5>
+                            <ul>
+                                <li>Affiches, flyers, bannières</li>
+                                <li>Logos et identités visuelles</li>
+                                <li>Publications pour réseaux sociaux</li>
+                                <li>Cartes de visite et supports pros</li>
+                            </ul>
+                            <div class="order-form mt-4">
+                                <h5>Commander ce service</h5>
+                                <form onsubmit="return submitOrderForm('Graphisme')">
+                                    <div class="mb-3">
+                                        <label class="form-label">Type de visuel</label>
+                                        <select class="form-select" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option>Flyer</option>
+                                            <option>Logo</option>
+                                            <option>Carte de visite</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Continuer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Administratifs -->
+            <div class="col-md-4" id="admin">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-file-alt service-icon"></i>
+                        <h4 class="card-title">Services Administratifs</h4>
+                        <p class="card-text">Vos documents officiels en toute simplicité</p>
+                        <button class="btn btn-outline-primary see-more-btn" data-target="admin-details">Voir plus</button>
+                        <div id="admin-details" class="service-details">
+                            <h5>Documents disponibles :</h5>
+                            <ul>
+                                <li>Acte de naissance sécurisé</li>
+                                <li>Casier judiciaire</li>
+                                <li>Registre de commerce</li>
+                                <li>Carte CIP et biométrique</li>
+                            </ul>
+                            <div class="order-form mt-4">
+                                <h5>Commander ce service</h5>
+                                <form onsubmit="return submitOrderForm('Services Administratifs')">
+                                    <div class="mb-3">
+                                        <label class="form-label">Type de document</label>
+                                        <select class="form-select" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option>Acte de naissance</option>
+                                            <option>Casier judiciaire</option>
+                                            <option>Registre de commerce</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Continuer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Rédaction -->
+            <div class="col-md-4" id="redaction">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-pen-nib service-icon"></i>
+                        <h4 class="card-title">Rédaction</h4>
+                        <p class="card-text">Des contenus professionnels pour valoriser vos documents</p>
+                        <button class="btn btn-outline-primary see-more-btn" data-target="redaction-details">Voir plus</button>
+                        <div id="redaction-details" class="service-details">
+                            <h5>Nos services de rédaction :</h5>
+                            <ul>
+                                <li>CV professionnels</li>
+                                <li>Lettres de motivation</li>
+                                <li>Exposés bien structurés</li>
+                                <li>Discours et présentations</li>
+                                <li>Documents officiels et académiques</li>
+                            </ul>
+                            <div class="order-form mt-4">
+                                <h5>Commander ce service</h5>
+                                <form onsubmit="return submitOrderForm('Rédaction')">
+                                    <div class="mb-3">
+                                        <label class="form-label">Type de rédaction</label>
+                                        <select class="form-select" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option>CV professionnel</option>
+                                            <option>Lettre de motivation</option>
+                                            <option>Exposé</option>
+                                            <option>Discours</option>
+                                            <option>Autre document</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Continuer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Intelligence Artificielle -->
+            <div class="col-md-4" id="ia">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-robot service-icon"></i>
+                        <h4 class="card-title">Intelligence Artificielle</h4>
+                        <p class="card-text">Exploitez la puissance de l’IA pour vos besoins quotidiens</p>
+                        <button class="btn btn-outline-primary see-more-btn" data-target="ia-details">Voir plus</button>
+                        <div id="ia-details" class="service-details">
+                            <h5>Ce que nous proposons :</h5>
+                            <ul>
+                                <li>Création d’images avec IA</li>
+                                <li>Rédaction assistée par IA</li>
+                                <li>Génération de contenus personnalisés</li>
+                                <li>Création de CV par IA</li>
+                                <li>Optimisation de vos textes</li>
+                            </ul>
+                            <div class="order-form mt-4">
+                                <h5>Commander ce service</h5>
+                                <form onsubmit="return submitOrderForm('Intelligence Artificielle')">
+                                    <div class="mb-3">
+                                        <label class="form-label">Choisissez un service IA</label>
+                                        <select class="form-select" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option>Image IA</option>
+                                            <option>Texte IA</option>
+                                            <option>CV par IA</option>
+                                            <option>Autre</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Continuer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
